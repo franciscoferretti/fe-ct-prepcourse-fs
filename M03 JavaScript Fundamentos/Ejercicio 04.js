@@ -19,6 +19,7 @@ function elevar(num, exponent) {
    // Tu código:
 }
 
+
 function redondearNumero(num) {
    // Redondea "num" al entero más próximo y retórnalo.
    // Tu código:
