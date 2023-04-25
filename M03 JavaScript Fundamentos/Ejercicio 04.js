@@ -8,6 +8,7 @@ function elevarAlCuadrado(num) {
    // Tu código:
 }
 
+
 function elevarAlCubo(num) {
    // Retorna el valor de "num" elevado al cubo.
    // Tu código:
