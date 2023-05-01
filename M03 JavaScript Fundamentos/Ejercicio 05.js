@@ -55,14 +55,20 @@ function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
+   let medida = lado * 4 ;
+   return medida;
 }
-
+console.log(retornarPerimetro(2));
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
+   let dolar = 1.20
+   let trasform = euro * dolar ;
+   return trasform;
 }
+console.log(deEuroAdolar(100));
 
 function esVocal(letra) {
    // Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.

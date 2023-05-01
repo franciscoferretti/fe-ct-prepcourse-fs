@@ -3,35 +3,47 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
-}
+} return array [0];
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array [array.length -1] ;
 }
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return array.length ;
 }
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-}
-
+   let resultado = [] ;
+   for (let i = 0; i < array.length; i++);
+   resultado.push([array[i] + 1]);
+} 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.push(elemento)
+   return array;
 }
+let resultadoArray =  agregarItemAlFinalDelArray(array, "chau");
+console.log(resultadoArray);
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.unshift(elemento);
+   return array;
 }
+let resultadoArray2 = agregarItemAlComienzoDelArray(array, 2);
+console.log(resultadoArray2);
 
 function dePalabrasAFrase(palabras) {
    // El argumento "palabras" es un arreglo de strings.
@@ -39,13 +51,21 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
+   return palabras.join("-");
 }
+let fraseSeparada = dePalabrasAFrase(["hola","me","llamo","francisco"]);
+console.log(fraseSeparada);
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   return array.includes(elemento);
 }
+
+let arr = [1, 2, 3, 4];
+console.log(arrayContiene(arr, 3)); 
+console.log(arrayContiene(arr, 5)); 
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
@@ -82,7 +102,16 @@ function diaDeLaSemana(numeroDeDia) {
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
+   function diaDeLaSemana(numeroDeDia) {
+      if (numeroDeDia === 1 || numeroDeDia === 7) {
+        return "Es fin de semana";
+      } else {
+        return "Es dia laboral";
+      }
+    }
 }
+console.log(diaDeLaSemana(7));
+console.log(diaDeLaSemana(4));
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.

@@ -49,11 +49,6 @@ function numeroRandom() {
    return aleatorio;
 }
 console.log(numeroRandom());
-// -----------
-// function numeroRandom2(min,max){
-// return Math.floor(Math.random() * (max - min + 1) + min);
-// }
-// console.log( numeroRandom2(1,15)); 
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
